@@ -1,0 +1,51 @@
+Program FoodDrink-app
+
+READ AND WRITE "makanan" with string
+READ AND WRITE "minuman" with string
+
+STORE "makanan" with string "wafer"
+STORE "makanan" with string "bakso"
+STORE "minuman" with string "cimory"
+STORE "minuman" with string "tehkotak"
+
+FUCNTION pilih
+PRINT "menu makanan dan minuman yang tersedia"
+IF "makanan" or "minuman" isTrue
+    ADD "makanan" to list
+     
+ELSE 
+    PRINT "Terima kasih telah berkunjung"
+END FUCNTION
+
+FUNCTION list
+    IF "makanan" isTrue
+        PRINT "Pilih makanan"
+            IF "wafer" isTrue
+            ADD "wafer" to keranjang
+            GO TO tambah
+                ELSE 
+                ADD "bakso" to keranjang
+                GO TO tambah
+    ELSE         
+        PRINT "Pilih minuman"
+            IF "cimory" isTrue
+            ADD "cimory" to keranjang
+            GO TO tambah
+                ELSE 
+                ADD "tehkotak" to keranjang
+                GO TO tambah
+END FUCNTION
+
+FUCNTION tambah
+    IF "tambah" isTrue
+        GO to pilih
+    ELSE
+        go to keranjang
+END FUNCTION
+
+FUCNTION keranjang
+    IF "makanan" or "minuman" isCheckout
+        PRINT "terima kasih sudah membeli"     
+    ELSE
+        PRINT "Terima kasih telah berkunjung"
+END FUCNTION
